@@ -8,6 +8,10 @@ public class DataRelayServerImpl implements DataRelayServer {
     public static final int TCPPort = 8888;
     boolean printRelayedData = true;
 
+    DataRelayServerImpl(boolean printRelayedData) {
+        this.printRelayedData = printRelayedData;
+    }
+
     /**
      * Listen for clients over TCP
      */
